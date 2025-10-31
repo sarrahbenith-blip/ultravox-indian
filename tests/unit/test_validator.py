@@ -142,7 +142,7 @@ class TestAgentConfigValidation:
 
     def test_invalid_temperature(self):
         """Test invalid temperature range."""
-        config = SAMPLE_AGENT_HINDI.copy()
+        config = copy.deepcopy(SAMPLE_AGENT_HINDI)
         config["model_config"]["temperature"] = 5.0  # Out of range
         is_valid, error = validate_agent_config(config)
         assert is_valid is False
@@ -150,7 +150,7 @@ class TestAgentConfigValidation:
 
     def test_invalid_max_tokens(self):
         """Test invalid max_tokens."""
-        config = SAMPLE_AGENT_HINDI.copy()
+        config = copy.deepcopy(SAMPLE_AGENT_HINDI)
         config["model_config"]["max_tokens"] = 10000  # Out of range
         is_valid, error = validate_agent_config(config)
         assert is_valid is False
