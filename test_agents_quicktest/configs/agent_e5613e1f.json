@@ -1,0 +1,42 @@
+{
+  "agent_id": "agent_e5613e1f",
+  "name": "English Education Assistant",
+  "description": "Test agent for English conversations",
+  "language_config": {
+    "primary_language": "en-IN",
+    "supported_languages": [
+      "en-IN"
+    ],
+    "enable_code_mixing": false
+  },
+  "tts_config": {
+    "provider": "google",
+    "voice": "en-IN-Wavenet-A",
+    "language": "en-IN",
+    "speed": 1.0,
+    "pitch": 1.0
+  },
+  "stt_config": {
+    "provider": "google",
+    "language": "en-IN",
+    "enable_punctuation": true,
+    "streaming": true
+  },
+  "model_config": {
+    "model_path": "fixie-ai/ultravox-v0_2",
+    "temperature": 0.5,
+    "max_tokens": 200,
+    "system_prompt": "You are an educational assistant."
+  },
+  "metadata": {
+    "use_case": "education",
+    "owner": "user_456",
+    "tags": [
+      "education",
+      "english"
+    ]
+  },
+  "created_at": "2025-10-31T05:35:35.257502Z",
+  "updated_at": "2025-10-31T05:35:35.257502Z",
+  "status": "active"
+}

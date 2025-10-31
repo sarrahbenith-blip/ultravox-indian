@@ -1,0 +1,43 @@
+{
+  "agent_id": "agent_0db622fb",
+  "name": "Updated Test Agent",
+  "description": "Test agent for Hindi conversations",
+  "language_config": {
+    "primary_language": "hi-IN",
+    "supported_languages": [
+      "hi-IN",
+      "en-IN"
+    ],
+    "enable_code_mixing": true
+  },
+  "tts_config": {
+    "provider": "sarvam",
+    "voice": "aditi",
+    "language": "hi-IN",
+    "speed": 1.0,
+    "pitch": 1.0
+  },
+  "stt_config": {
+    "provider": "sarvam",
+    "language": "hi-IN",
+    "enable_punctuation": true,
+    "streaming": true
+  },
+  "model_config": {
+    "model_path": "fixie-ai/ultravox-v0_2",
+    "temperature": 0.7,
+    "max_tokens": 150,
+    "system_prompt": "You are a helpful healthcare assistant."
+  },
+  "metadata": {
+    "use_case": "healthcare",
+    "owner": "user_123",
+    "tags": [
+      "healthcare",
+      "hindi"
+    ]
+  },
+  "created_at": "2025-10-31T05:35:35.257034Z",
+  "updated_at": "2025-10-31T05:35:35.263683Z",
+  "status": "active"
+}

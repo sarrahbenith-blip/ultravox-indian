@@ -1,0 +1,43 @@
+{
+  "agent_id": "agent_94cac02d",
+  "name": "Tamil E-commerce Assistant",
+  "description": "Test agent for Tamil conversations",
+  "language_config": {
+    "primary_language": "ta-IN",
+    "supported_languages": [
+      "ta-IN",
+      "en-IN"
+    ],
+    "enable_code_mixing": true
+  },
+  "tts_config": {
+    "provider": "sarvam",
+    "voice": "lakshmi",
+    "language": "ta-IN",
+    "speed": 1.0,
+    "pitch": 1.0
+  },
+  "stt_config": {
+    "provider": "sarvam",
+    "language": "ta-IN",
+    "enable_punctuation": true,
+    "streaming": true
+  },
+  "model_config": {
+    "model_path": "fixie-ai/ultravox-v0_2",
+    "temperature": 0.6,
+    "max_tokens": 150,
+    "system_prompt": "You are an e-commerce support assistant."
+  },
+  "metadata": {
+    "use_case": "ecommerce",
+    "owner": "user_789",
+    "tags": [
+      "ecommerce",
+      "tamil"
+    ]
+  },
+  "created_at": "2025-10-31T05:35:35.257924Z",
+  "updated_at": "2025-10-31T05:35:35.257924Z",
+  "status": "active"
+}
