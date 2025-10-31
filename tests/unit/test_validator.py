@@ -162,21 +162,21 @@ class TestAgentConfigEdgeCases:
 
     def test_min_temperature(self):
         """Test minimum valid temperature."""
-        config = SAMPLE_AGENT_HINDI.copy()
+        config = copy.deepcopy(SAMPLE_AGENT_HINDI)
         config["model_config"]["temperature"] = 0.0
         is_valid, error = validate_agent_config(config)
         assert is_valid is True
 
     def test_max_temperature(self):
         """Test maximum valid temperature."""
-        config = SAMPLE_AGENT_HINDI.copy()
+        config = copy.deepcopy(SAMPLE_AGENT_HINDI)
         config["model_config"]["temperature"] = 2.0
         is_valid, error = validate_agent_config(config)
         assert is_valid is True
 
     def test_min_name_length(self):
         """Test minimum name length (3 chars)."""
-        config = SAMPLE_AGENT_HINDI.copy()
+        config = copy.deepcopy(SAMPLE_AGENT_HINDI)
         config["name"] = "AB"  # Too short
         is_valid, error = validate_agent_config(config)
         assert is_valid is False
@@ -184,7 +184,7 @@ class TestAgentConfigEdgeCases:
 
     def test_max_name_length(self):
         """Test maximum name length (100 chars)."""
-        config = SAMPLE_AGENT_HINDI.copy()
+        config = copy.deepcopy(SAMPLE_AGENT_HINDI)
         config["name"] = "A" * 101  # Too long
         is_valid, error = validate_agent_config(config)
         assert is_valid is False
