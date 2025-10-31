@@ -1,5 +1,7 @@
 """Unit tests for agent configuration validator."""
 
+import copy
+
 import pytest
 
 from ultravox.agent_manager.validator import (
